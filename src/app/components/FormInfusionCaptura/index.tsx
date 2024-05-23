@@ -85,7 +85,7 @@ function CallToAction() {
       action="https://readytogo59637.activehosted.com/proc.php"
     >
       <input type="hidden" name="act" value="sub" />
-      <input type="hidden" name="f" value="10" />
+      <input type="hidden" name="f" value="9" />
       <input type="hidden" name="or" value="0b2a0fe8b618557e119630b0091d6aa9" />
       <input type="hidden" name="field[10]" value={utm_campaign ?? ""} />
       <input type="hidden" name="field[11]" id="utm_source" value={utm_source ?? ""} />
