@@ -6,7 +6,7 @@ import Logo from "public/logo-ready-to-go.svg"
 
 export default function LadeiraSection() {
     return (
-        <main className=" pt-[12.19rem] sm:pt-[2.32rem] sm:px-[1.56rem] relative z-0">
+        <main className=" pt-[7.19rem] sm:pt-[2.32rem] sm:px-[1.56rem] relative z-0" id="ladeira">
 
             <div className="flex sm:flex-col items-center justify-center gap-[5.91rem] sm:gap-[1.23rem] z-10 pb-[7.75rem] sm:pb-[2rem]">
                 <Image className="sm:hidden" src={Leandro} alt="" />

@@ -63,7 +63,7 @@ export default function PageA() {
                 type_content="isca"
                 versao_pico="ppt"
             />
-            <section className=" w-full pt-[12.81rem] sm:pt-[5.06rem]">
+            <section className=" w-full pt-[10.81rem] sm:pt-[5.06rem]">
                 <section className="max-w-[55.5rem] sm:max-w-[20.75rem] mx-auto rounded-[1.25rem] gradient-top p-[1px] ">
                     <div className="p-[4.38rem] sm:px-[1.68rem] w-full bg-[#000] rounded-[1.25rem] pb-[6.37rem] sm:pb-[1.59rem]">
                         <Image className=" w-fit sm:w-[14.08406rem] mx-auto -mt-[5.9rem] sm:-mt-[5.3rem] px-8 sm:px-6 bg-logo" src={Logo} alt="" />
@@ -82,16 +82,19 @@ export default function PageA() {
                         <ButtonCustom handleShowModal={handleShowModal} />
                     </div>
                 </section>
+                    <div className="w-fit mx-auto mt-20 sm:hidden">
+                        <a href="#ladeira" className="inline-block w-[15px] h-[15px] rotate-[135deg] border-r-2 border-r-white border-t-2 border-t-white border-solid relative z-50"></a>
+                    </div>
             </section>
-            <div className="relative z-20">
-                <LadeiraSection />
+            <div className="relative z-20" >
+                <LadeiraSection  />
             </div>
             <Image className="absolute top-0 sm:hidden  h-full" src={SvgL} alt="" />
             <Image className="absolute bottom-0 right-0 sm:hidden" src={SvgR} alt="" />
             <Image className="absolute top-0 sm:block hidden " src={SvgLm} alt="" />
             <Image className="absolute bottom-0 right-0 sm:block hidden " src={SvgRm} alt="" />
             <Modal show={showModal} setShow={setShowModal}>
-                <div className="w-full flex flex-col">
+                <div className="w-full flex flex-col" >
                     <div className="px-10 py-12">
                         <Image src={Logo} className="lg:w-auto w-[126px]" alt="Logo" />
                         <div>

@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html{
+  scroll-behavior: smooth;
+}
+
 .gradient-top {
   background: rgb(0, 0, 0);
   background: linear-gradient(0deg, rgba(0, 0, 0, 1) 15%, #45345e 49%);
@@ -67,4 +71,8 @@ height: 27.75rem;
 .test{
   @apply blur-[104.9000015258789px] rounded-[52.8125rem];
   background: var(--Preto, #000);
+}
+
+.arrow {
+    @apply inline-block w-[15px] h-[15px] rotate-[135deg] border-r-2 border-r-white border-t-2 border-t-white border-solid;
 }
