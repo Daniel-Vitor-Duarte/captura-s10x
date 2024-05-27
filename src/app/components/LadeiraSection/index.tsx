@@ -1,16 +1,15 @@
 import Image from "next/image";
-import Leandro from "public/leandro.jpg"
-import LeandroM from "public/leandro-mobile.jpg"
+import Leandro from "public/leandro.webp"
+import LeandroM from "public/leandro-mobile.webp"
 import star from "public/star.svg"
 import Logo from "public/logo-ready-to-go.svg"
 
 export default function LadeiraSection() {
     return (
-        <main className=" pt-[8.69rem] sm:pt-[2.32rem] sm:px-[1.56rem] relative z-0">
+        <main className=" pt-[12.19rem] sm:pt-[2.32rem] sm:px-[1.56rem] relative z-0">
 
             <div className="flex sm:flex-col items-center justify-center gap-[5.91rem] sm:gap-[1.23rem] z-10 pb-[7.75rem] sm:pb-[2rem]">
                 <Image className="sm:hidden" src={Leandro} alt="" />
-                <Image className="sm:block hidden" src={LeandroM} alt="" />
                 <div className="absolute mr-[38rem] -z-50 sm:top-auto sm:hidden">
                     <div className="w-[22.42381rem] h-[15.31038rem] rounded-full bg-[#9C12F1] blur-[155.71298217773438px] "></div>
                     <div className="w-[22.42381rem] h-[15.31038rem] rounded-full bg-[#F11268] blur-[155.71298217773438px] "></div>
@@ -34,6 +33,7 @@ export default function LadeiraSection() {
                         </p>
                     </div>
                 </div>
+                <Image className="sm:block hidden" src={LeandroM} alt="" />
             </div>
             <footer className="text-white text-[.75rem] flex sm:flex-col sm:items-center sm:gap-6 justify-between px-20 sm:px-0 py-8 sm:bg-transparent bg-[#363636]  opacity-30">
                 <p>

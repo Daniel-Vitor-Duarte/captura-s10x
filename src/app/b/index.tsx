@@ -9,8 +9,17 @@ import Logo from "public/logo.svg"
 import { useState } from "react";
 import ButtonCustom from "../components/ButtonCustomCaptura";
 import FormInfusion from "../components/FormInfusionCaptura";
+import React, { ReactNode } from 'react';
 
-const Modal = ({ show, setShow, children }) => {
+interface ModalProps {
+  show: boolean;
+  setShow: (show: boolean) => void;
+  children: ReactNode;
+}
+
+
+
+const Modal: React.FC<ModalProps> = ({ show, setShow, children }) => {
     const handleClose = () => setShow(false);
 
     return show ? (

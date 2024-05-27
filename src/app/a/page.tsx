@@ -9,10 +9,18 @@ import Logo from "public/logo.svg"
 import { useState } from "react";
 import ButtonCustom from "../components/ButtonCustomCaptura";
 import FormInfusion from "../components/FormInfusionCaptura";
+import DataLayer from "@/app/components/DataLayer";
+import React, { ReactNode } from 'react';
+
+interface ModalProps {
+    show: boolean;
+    setShow: (show: boolean) => void;
+    children: ReactNode;
+}
 
 
 
-const Modal = ({ show, setShow, children }) => {
+const Modal: React.FC<ModalProps> = ({ show, setShow, children }) => {
     const handleClose = () => setShow(false);
 
     return show ? (
@@ -48,7 +56,14 @@ export default function PageA() {
 
     return (
         <main className="relative z-0 overflow-y-hidden bg-black">
-            <section className=" w-full pt-[8.31rem] sm:pt-[5.06rem]">
+            <DataLayer
+                type_page="captura"
+                id_produto="1817832"
+                operacao="ppt"
+                type_content="isca"
+                versao_pico="ppt"
+            />
+            <section className=" w-full pt-[12.81rem] sm:pt-[5.06rem]">
                 <section className="max-w-[55.5rem] sm:max-w-[20.75rem] mx-auto rounded-[1.25rem] gradient-top p-[1px] ">
                     <div className="p-[4.38rem] sm:px-[1.68rem] w-full bg-[#000] rounded-[1.25rem] pb-[6.37rem] sm:pb-[1.59rem]">
                         <Image className=" w-fit sm:w-[14.08406rem] mx-auto -mt-[5.9rem] sm:-mt-[5.3rem] px-8 sm:px-6 bg-logo" src={Logo} alt="" />
