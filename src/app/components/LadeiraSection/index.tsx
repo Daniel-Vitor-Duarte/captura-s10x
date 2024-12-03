@@ -39,11 +39,14 @@ export default function LadeiraSection() {
                 <p>
                     © 2023 Ready To Go. Todos os direitos reservados.
                 </p>
-                <div className="flex gap-[.44rem]">
-                    <p>
-                        Designed by
-                    </p>
-                    <Image src={Logo} alt="" />
+                <div className="flex items-center lg:gap-2 gap-2 text-[.75rem] font-bold underline">
+                    <a href="https://vendatodosantodia.com.br/politica-de-privacidade/stories10x/" target="_blank">
+                        <p>Política de Privacidade</p>
+                    </a>
+                    <p>|</p>
+                    <a href="https://vendatodosantodia.com.br/termos-de-uso/stories10x/" target="_blank">
+                        <p>Termos de Uso</p>
+                    </a>
                 </div>
             </footer>
         </main>
